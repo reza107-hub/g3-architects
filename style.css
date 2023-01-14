@@ -101,6 +101,7 @@ body {
     justify-content: center;
 }
 
+
 .teams {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
