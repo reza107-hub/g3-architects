@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* common styles */
+
+.btn-primary {
+    height: 64px;
+    background: #FF900E;
+    border-radius: 8px;
+    color: #FFFFFF;
+    padding: 20px 25px;
+    border-style: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.btn-primary:hover {
+    background-color: blueviolet;
+}
+
+/* 
+-----------------------------------------header
+                                                        ------------------------------ */
+
+.header {
+    background: rgba(255, 144, 14, 0.1);
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav .nav-title {
+    color: #131313;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav ul li a {
+    color: #424242;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.nav ul {
+    display: flex;
+    gap: 75px;
+}
+
+.nav ul li {
+    list-style: none;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header-info img {
+    width: 60%;
+    margin-top: 30px;
+}
+
+.header-title {
+    font-weight: 700;
+    font-size: 64px;
+    color: #131313;
+    margin-bottom: 30px;
+}
+
+.header-description {
+    width: 868px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 30px;
+}
+
+
+/* list of features styles */
+.features-list {
+    margin: 0 200px;
+    margin-top: 85px;
+    display: flex;
+    gap: 73px;
+    align-items: center;
+    justify-content: center;
+}
+
+.teams {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.team img {
+    width: 250px;
+}
+.features-title {
+    font-weight: 500;
+    font-size: 45px;
+    margin-bottom: 24px;
+}
+
+.features-title .span-1 {
+    color: #727272;
+}
+
+.features-title .span-2 {
+    color: #131313;
+}
+
+.features-title .span-3 {
+    color: #FF900E;
+}
+
+.features-description {
+    margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+}
