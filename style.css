@@ -35,10 +35,19 @@ body {
 
 }
 
+.menu {
+    display: none;
+}
+
 .nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+nav li:hover {
+    background-color: lightgray;
+
 }
 
 .nav .nav-title,
@@ -246,6 +255,20 @@ body {
 
 .animation {
     text-align: center;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    padding: 45px 35px;
+    animation: bg-spin 3s ease-in-out infinite;
+    animation-play-state: running;
+}
+
+@keyframes bg-spin {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.7);
+    }
 }
 
 .animation h4,
@@ -301,4 +324,142 @@ footer {
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+
+/* ------------------responsive for mobile 
+-----------------------------------*/
+
+
+@media only screen and (max-width:688px) {
+
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .nav .nav-title {
+        font-size: 24px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        padding-left: 0;
+        gap: 10px;
+    }
+
+    .menu {
+        display: contents;
+    }
+
+
+    .in-menu {
+        display: none;
+    }
+
+    .menu .dropdown {
+        display: none;
+        position: absolute;
+        background-color: lightyellow;
+        padding-left: 0;
+    }
+
+    .nav li:active .dropdown {
+        display: block;
+    }
+
+    .header-info {
+        display: block;
+    }
+
+    .header-title {
+        font-size: 30px;
+    }
+
+    .header-description {
+        width: 100%;
+    }
+
+    .header-info img {
+        width: 100%;
+    }
+
+    footer {
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    .sponsor {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+
+    }
+
+    .sponsor img {
+        width: 80px;
+    }
+
+    .animations {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .animation {
+        border: none;
+    }
+
+    .Some-Facts {
+        display: block;
+        left: 0;
+    }
+
+    .Some-Facts>div>p {
+        width: 100%;
+    }
+
+    .animations h4 {
+        font-size: xx-large;
+    }
+
+    .lovely-features-section {
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .lovely-features-info {
+        height: 100%;
+        width: 100%;
+    }
+
+    .architect img {
+        width: 100%;
+    }
+
+    .architect-btn {
+        height: 100px;
+        width: 180px;
+        font-size: 29px;
+        left: 0px;
+        top: -75px;
+    }
+
+    .architect-btn span {
+        font-size: medium;
+    }
+
+    .features-list {
+        flex-direction: column;
+        margin: 100px 0;
+    }
+    .teams {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .team img {
+        width: 100%;
+    }
 }
